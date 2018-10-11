@@ -5,5 +5,5 @@ workflow "New workflow" {
 
 action "echo" {
   uses = "./.github/action-fuzz"
-  args = "Hello mister fuzz"
+  args = "Hello leona!"
 }
