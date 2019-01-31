@@ -4,6 +4,6 @@ workflow "New workflow" {
 }
 
 action "echo" {
-  uses = "./.github/action-hit"
+  uses = "./action-hit"
   args = "Hello leona!"
 }
