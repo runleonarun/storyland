@@ -7,7 +7,7 @@ LABEL "com.github.actions.color"="purple"
 
 LABEL "repository"="http://github.com/runleonarun/Storyland"
 LABEL "homepage"="http://github.com/actions"
-LABEL "maintainer"="runleoanrun <runleonarun@github.com>"
+LABEL "maintainer"="runleonarun <runleonarun@github.com>"
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
