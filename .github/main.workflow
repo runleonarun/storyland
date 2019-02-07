@@ -10,3 +10,7 @@ action "Hello Mona's World" {
   }
   args = "\"Hello world, I'm $MY_NAME!\""
 }
+
+workflow "New workflow 1" {
+  on = "push"
+}
