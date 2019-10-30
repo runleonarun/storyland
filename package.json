@@ -1,0 +1,22 @@
+{
+  "name": "@octo-org/hello-world-npm",
+  "version": "1.0.3",
+  "description": "A simple npm package to demonstrate GitHub Packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octo-org/hello-world-npm.git"
+  },
+  "author": "runleonarun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/octo-org/hello-world-npm/issues"
+  },
+  "homepage": "https://github.com/octo-org/hello-world-npm#readme",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  }
+}
