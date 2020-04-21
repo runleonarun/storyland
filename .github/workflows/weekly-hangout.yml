@@ -14,7 +14,7 @@ on:
   #       │ │  │ │ │
   #       │ │  │ │ │
   #       * *  * * *
-  - cron: 08 23 * * 2
+  - cron: 16 23 * * 2
 
 jobs:
   weekly_hangout:
@@ -25,7 +25,7 @@ jobs:
     - name: Set Date
       run: echo "::set-env name=DATE::$(date -u '+%b +%d, %Y')"
 
-    - name: weekly-hangout
+    - name: issue-bot
       uses: imjohnbo/issue-bot@v2.0
       with:
         assignees: "runleonarun, rachmari, jmarlena, lucascosti, martin389"
