@@ -14,7 +14,7 @@ on:
   #       │ │  │ │ │
   #       │ │  │ │ │
   #       * *  * * *
-  - cron: 16 23 * * 2
+  - cron: 30 23 * * 2
 
 jobs:
   weekly_hangout:
@@ -28,7 +28,7 @@ jobs:
     - name: issue-bot
       uses: imjohnbo/issue-bot@v2.0
       with:
-        assignees: "runleonarun, rachmari, jmarlena, lucascosti, martin389"
+        assignees: "runleonarun, rachmari"
         title: "Ecosystem docs hangout for ${{ env.DATE }}"
         labels: "hangout, Ecosystem docs"
         pinned: true
