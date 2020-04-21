@@ -1,7 +1,7 @@
 on: push
 name: New workflow
 jobs:
-  helloMona'sWorld:
+  helloMonasWorld:
     name: Hello Monas World
     runs-on: ubuntu-latest
     steps:
