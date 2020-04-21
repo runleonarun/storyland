@@ -2,7 +2,7 @@ on: push
 name: New workflow
 jobs:
   helloMona'sWorld:
-    name: Hello Mona's World
+    name: Hello Monas World
     runs-on: ubuntu-latest
     steps:
     - name: Hello Mona's World
