@@ -14,11 +14,10 @@ on:
   #       │ │  │ │ │
   #       │ │  │ │ │
   #       * *  * * *
-  - cron: 33 15 * * 2
+  - cron: 47 15 * * 2
 
 jobs:
-
-  Weekly_hangout:
+  weekly_hangout:
     name: Weekly hangout
     runs-on: ubuntu-latest
     steps:
