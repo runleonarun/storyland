@@ -1,0 +1,53 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Weekly hangout
+# Get ready for the weekly meeting.
+name: Weekly hangout
+
+on:
+  repository_dispatch:
+  schedule:
+  #       ┌───────────── minute (0 - 59)
+  #       │ ┌───────────── hour (0 - 23)
+  #       │ │  ┌───────────── day of the month (1 - 31)
+  #       │ │  │ ┌───────────── month (1 - 12)
+  #       │ │  │ │ ┌───────────── day of the week (0 - 6) (Sunday to Saturday;
+  #       │ │  │ │ │                                   7 is also Sunday on some systems)
+  #       │ │  │ │ │
+  #       │ │  │ │ │
+  #       * *  * * *
+  - cron: 0 12 * * 4
+
+jobs:
+
+  Weekly_hangout:
+    name: Weekly hangout
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Set Date
+      run: echo "::set-env name=DATE::$(date -u '+%b +%d, %Y')"
+
+    - name: weekly-hangout
+      uses: imjohnbo/issue-bot@v2.0
+      with:
+        assignees: "runleonarun, rachmari, jmarlena, lucascosti, martin389"
+        title: "Ecosystem docs hangout for ${{ env.DATE }}"
+        labels: "hangout, Ecosystem docs"
+        pinned: true
+        close-previous: true
+        body: >
+          ### Stuff to talk about
+          - [ ] Process changes. What can we improve?
+          - [ ] Work that needs attention
+          - [ ] Time to share something you've learned 
+          - [ ] News
+          - [ ] Anything you like
+         
+          /cc @github/product-docs-ecosystem
+          
+          - [Ecosystem work this week project board](https://github.com/github/internal-developer.github.com/projects/9)
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
