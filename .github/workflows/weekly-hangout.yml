@@ -14,7 +14,7 @@ on:
   #       │ │  │ │ │
   #       │ │  │ │ │
   #       * *  * * *
-  - cron: 30 23 * * 2
+  - cron: 30 0 * * 3
 
 jobs:
   weekly_hangout:
@@ -35,6 +35,7 @@ jobs:
         close-previous: true
         body: >
           ### Stuff to talk about
+          
           - [ ] Process changes. What can we improve?
           - [ ] Work that needs attention
           - [ ] Time to share something you've learned 
