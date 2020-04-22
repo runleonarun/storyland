@@ -14,7 +14,7 @@ on:
   #       │ │  │ │ │
   #       │ │  │ │ │
   #       * *  * * *
-  - cron: 02 2 * * 3
+  - cron: 10 2 * * 3
 
 jobs:
   weekly_hangout:
