@@ -23,7 +23,7 @@ jobs:
     steps:
 
     - name: Set Date
-      run: echo "::set-env name=DATE::$(date -u '+%b +%d, %Y')"
+      run: echo "::set-env name=DATE::$(date -u '+%b %d, %Y')"
 
     - name: issue-bot
       uses: imjohnbo/issue-bot@v2.0
