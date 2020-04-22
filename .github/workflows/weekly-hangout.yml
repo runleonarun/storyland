@@ -14,7 +14,7 @@ on:
   #       │ │  │ │ │
   #       │ │  │ │ │
   #       * *  * * *
-  - cron: 57 1 * * 3
+  - cron: 02 2 * * 3
 
 jobs:
   weekly_hangout:
@@ -23,7 +23,7 @@ jobs:
     steps:
 
     - name: Set Date
-      run: echo "::set-env name=DATE::$(date -u '+%b %d+4, %Y')"
+      run: echo "::set-env name=DATE::$(date -u '+%b %Y')"
 
     - name: issue-bot
       uses: imjohnbo/issue-bot@v2.0
@@ -37,9 +37,13 @@ jobs:
           ### Stuff to talk about
           
           - [ ] Process changes. What can we improve?
+          
           - [ ] Work that needs attention
+          
           - [ ] Time to share something you've learned 
+          
           - [ ] News
+          
           - [ ] Anything you like
          
           /cc @github/product-docs-ecosystem
