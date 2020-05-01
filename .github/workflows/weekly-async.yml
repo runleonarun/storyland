@@ -14,7 +14,7 @@ on:
   #       │ │  │ │ │
   #       │ │  │ │ │
   #       * *  * * *
-  - cron: 55 20 * * 5
+  - cron: 09 22 * * 5
 
 jobs:
  wwekly_async:
@@ -38,11 +38,11 @@ jobs:
           ------
 
           For this week, by Friday:
-
+          
           **First responders:** please drop an update for your team in a comment below with interesting things the team worked on, updates you'd like to share with the larger team, or questions you may have!
-
+          
           **Everyone else:** Have a question? Want to highlight interesting work? Think the team should know about a Team post? Have an excellent pic of a treat you made or a kid or pet being weird? Please leave a comment!
-
+          
           /cc @github/product-docs @chiedo 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
