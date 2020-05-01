@@ -1,0 +1,48 @@
+# Product documentation async hangout
+# Get ready for the weekly meeting.
+name: Weekly async
+
+on:
+  repository_dispatch:
+  schedule:
+  #       ┌───────────── minute (0 - 59)
+  #       │ ┌───────────── hour (0 - 23)
+  #       │ │  ┌───────────── day of the month (1 - 31)
+  #       │ │  │ ┌───────────── month (1 - 12)
+  #       │ │  │ │ ┌───────────── day of the week (0 - 6) (Sunday to Saturday;
+  #       │ │  │ │ │                                   7 is also Sunday on some systems)
+  #       │ │  │ │ │
+  #       │ │  │ │ │
+  #       * *  * * *
+  - cron: 46 20 * * 5
+
+jobs:
+ wwekly_async:
+    name: Weekly async
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Set Date
+      run: echo "::set-env name=DATE::$(date -u '+%b %d, %Y')"
+
+    - name: issue-bot
+      uses: imjohnbo/issue-bot@v2.0
+      with:
+        title: "Product Docs async hangout for ${{ env.DATE }}"
+        labels: "hangout"
+        pinned: true
+        close-previous: true
+        body: >
+          ## Welcome to the async hangout for this week!
+
+          ------
+
+          For this week, by Friday:
+
+          **First responders:** please drop an update for your team in a comment below with interesting things the team worked on, updates you'd like to share with the larger team, or questions you may have!
+
+          **Everyone else:** Have a question? Want to highlight interesting work? Think the team should know about a Team post? Have an excellent pic of a treat you made or a kid or pet being weird? Please leave a comment!
+
+          /cc @github/product-docs @chiedo 
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
