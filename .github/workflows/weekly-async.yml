@@ -14,7 +14,7 @@ on:
   #       │ │  │ │ │
   #       │ │  │ │ │
   #       * *  * * *
-  - cron: 29 22 * * 5
+  - cron: 36 22 * * 5
 
 jobs:
  wwekly_async:
