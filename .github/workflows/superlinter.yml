@@ -1,4 +1,4 @@
-    name: Super-Linter
+name: Super-Linter
     # Run this workflow ever time code is pushed to a branch
     # other than `main` in your repository
     on: push
@@ -18,5 +18,5 @@
           - name: Run Super-Linter
             uses: github/super-linter@v3
             env:
-              DEFAULT_BRANCH: master
+              DEFAULT_BRANCH: main
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
