@@ -1,8 +1,8 @@
 name: Super-Linter
-    # Run this workflow ever time code is pushed to a branch
-    # other than `main` in your repository
-    on: push
-    jobs:
+# Run this workflow ever time code is pushed to a branch
+# other than `main` in your repository
+on: push
+jobs:
       # Set the job key. The key is displayed as the job name 
       # when a job name is not provided
       super-lint:
