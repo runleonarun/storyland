@@ -1,3 +1,4 @@
+---
 name: Release tracking issue
 about: Use to track documentation work for upcoming ships of new products, features, or enhancements.
 title: ''
