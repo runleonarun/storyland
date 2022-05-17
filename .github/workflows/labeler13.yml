@@ -3,7 +3,7 @@ name: labeler13
 on: [pull_request_target]
 
 jobs:
-  labeler:
+  labeler13:
     runs-on: ubuntu-latest
     name: Pull Request size labeler
     steps:
