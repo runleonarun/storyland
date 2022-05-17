@@ -1,13 +1,13 @@
 name: labeler13
 
-on: [pull_request]
+on: [pull_request_target]
 
 jobs:
-  labeler13:
+  labeler:
     runs-on: ubuntu-latest
     name: Pull Request size labeler
     steps:
-      - uses: CodelyTV/pr-size-labeler@v1
+      - uses: codelytv/pr-size-labeler@v4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           xs_label: 'size/xs'
