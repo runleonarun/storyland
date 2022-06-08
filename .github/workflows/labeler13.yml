@@ -23,5 +23,4 @@ jobs:
           message_if_xl: >
             This PR is pretty big! We recommend breaking it down to under 1000 lines, which makes it easier to review.
             You can also make it more manageable by only addressing one issue per PR or moving some changes to a separate branch.
-          github_api_url: 'api.github.com'
           files_to_ignore: ''
