@@ -10,15 +10,15 @@ jobs:
       - uses: codelytv/pr-size-labeler@v1.3.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          xs_label: 'x-small'
+          xs_label: 'size: x-small'
           xs_max_size: '10'
-          s_label: 'small'
+          s_label: 'size: small'
           s_max_size: '50'
-          m_label: 'size/m'
+          m_label: 'size: medium'
           m_max_size: '250'
-          l_label: 'size/l'
+          l_label: 'size: large'
           l_max_size: '500'
-          xl_label: 'size/xl'
+          xl_label: 'size: x-large'
           fail_if_xl: 'false'
           message_if_xl: >
             This PR is pretty big! We recommend breaking it down to under 1000 lines, which makes it easier to review.
