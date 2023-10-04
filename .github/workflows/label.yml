@@ -25,6 +25,7 @@ jobs:
           
           for (const issue of issues) {
             if (issue.number === context.issue.number) {
+              return // Creator is new!!
               continue
             }
 
@@ -37,5 +38,5 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            label: `new contributor`
+            labels: ['new contributor']
           })
