@@ -1,5 +1,4 @@
 name: Add/Remove Labels
-
 on:
   pull_request_target:
     types: [opened]
@@ -20,7 +19,7 @@ jobs:
                 state: 'all',
               });
               
-              const issues = await github.paginate(options);
+              const issues = await github.paginate(opts);
 
               // Check if the creator is already a contributor to any issue.
               for (const issue of issues) {
