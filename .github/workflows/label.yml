@@ -13,7 +13,6 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            async function addNewLabel() {
               const creator = context.payload.sender.login;
               const opts = github.rest.issues.listForRepo.endpoint.merge({
                 ...context.issue,
@@ -21,7 +20,7 @@ jobs:
                 state: 'all',
               });
               
-              const issues = await github.paginate(opts);
+              const issues = await github.paginate(options);
 
               // Check if the creator is already a contributor to any issue.
               for (const issue of issues) {
@@ -29,8 +28,8 @@ jobs:
                   continue;
                 }
 
-                if (issue.pull_request && issue.user.login === creator) {
-                  return;
+                if (issue.pull_request) {
+                  return; // Creator is already a contributor.
                 }
               }
 
@@ -41,6 +40,3 @@ jobs:
                 repo: context.repo.repo,
                 labels: ['new contributor'],
               });
-            }
-
-            addNewLabel();
