@@ -5,6 +5,7 @@ on:
 
 jobs:
   add_new_contributor_label:
+    if: github.event.action == 'opened'
     runs-on: ubuntu-latest
     steps:
       - name: Add new contributor label
