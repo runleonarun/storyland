@@ -18,8 +18,8 @@ body:
         - label: "Partner"
         - label: "dbt Labs employee"
         - label: "Other"
-      validations:
-        required: false
+    validations:
+      required: false
 
   - type: textarea
     id: content_idea
@@ -29,5 +29,5 @@ body:
         - Give as much detail as you can to help us understand your idea. 
         - Why do you think this content is important?  
         - Who will this new content help?
-      validations:
-        required: true
+    validations:
+      required: true
