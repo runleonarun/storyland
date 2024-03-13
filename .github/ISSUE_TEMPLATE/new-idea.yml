@@ -1,5 +1,5 @@
-name: Propose new content for docs.getdbt.com
-description: For proposing new content, such as a new guide or a new page.
+name: "Propose new content"
+description: "For proposing new content, such as a new guide or a new page."
 labels: ["content","idea"]
 body:
   - type: markdown
