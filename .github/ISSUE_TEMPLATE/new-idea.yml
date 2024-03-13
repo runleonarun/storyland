@@ -21,13 +21,13 @@ body:
       validations:
           required: false
 
-   - type: textarea
-     attributes:
-     label: >
-          What's your idea for new content?
-     description: |
-       - Give as much detail as you can to help us understand your idea. 
-       - Why do you think this content is important?  
-       - Who will this new content help?
-     validations:
-       required: true
+  - type: textarea
+    attributes:
+    label: >
+      What's your idea for new content?
+    description: |
+      - Give as much detail as you can to help us understand your idea. 
+      - Why do you think this content is important?  
+      - Who will this new content help?
+    validations:
+      required: true
