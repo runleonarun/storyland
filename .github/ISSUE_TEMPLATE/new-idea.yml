@@ -19,15 +19,15 @@ body:
         - label: dbt Labs employee
         - label: Other
       validations:
-          required: false
+        required: false
 
   - type: textarea
+    id: content_idea
     attributes:
-    label: >
-      What's your idea for new content?
-    description: |
-      - Give as much detail as you can to help us understand your idea. 
-      - Why do you think this content is important?  
-      - Who will this new content help?
-    validations:
-      required: true
+      label: What's your idea for new content?
+      description: |
+        - Give as much detail as you can to help us understand your idea. 
+        - Why do you think this content is important?  
+        - Who will this new content help?
+      validations:
+        required: true
