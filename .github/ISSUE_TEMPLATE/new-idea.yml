@@ -1,13 +1,12 @@
 name: Propose new content for docs.getdbt.com
-description: >
-  For proposing new content, such as a new guide or a new page.
+description: For proposing new content, such as a new guide or a new page.
 labels: ["content","idea"]
 body:
-  - type: markdown
+   - type: markdown
     attributes:
       value: |
         Thank you for sharing your idea for the dbt product documentation.
-    - type: markdown
+   - type: markdown
     attributes:
       value: |
         * You can submit ideas or suggest changes to our content by opening an [Issue](https://github.com/dbt-labs/docs.getdbt.com/issues/new/choose).
