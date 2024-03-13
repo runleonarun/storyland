@@ -12,19 +12,19 @@ body:
   - type: checkboxes
     id: author_type
     attributes:
-      label: Which of these best describes you?
+      label: "Which of these best describes you?"
       options:
-        - label: dbt Community member 
-        - label: Partner 
-        - label: dbt Labs employee
-        - label: Other
+        - label: "dbt Community member"
+        - label: "Partner"
+        - label: "dbt Labs employee"
+        - label: "Other"
       validations:
         required: false
 
   - type: textarea
     id: content_idea
     attributes:
-      label: What's your idea for new content?
+      label: "What's your idea for new content?"
       description: |
         - Give as much detail as you can to help us understand your idea. 
         - Why do you think this content is important?  
