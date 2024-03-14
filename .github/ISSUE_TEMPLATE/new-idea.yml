@@ -35,6 +35,7 @@ body:
      required: true
 
 - type: textarea
+  id: location
   attributes:
     label: Where would you recommend this content live on the docs.getdbt.com?
     description: "Please link to the page or pages you think best fit."
