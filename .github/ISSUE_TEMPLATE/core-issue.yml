@@ -20,7 +20,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Tell us more about this update:
+      label: Tell us more about this update.
       description: |
         - Give as much detail as you can to help us understand the change you want to see. 
         - What use cases does it support? 
