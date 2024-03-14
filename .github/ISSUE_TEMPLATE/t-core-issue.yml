@@ -13,17 +13,17 @@ body:
 
   - type: textarea
     attributes:
-      label: Link to the page(s) on docs.getdbt.com requiring updates.
+      label: Link to the page(s) on docs.getdbt.com requiring updates
       description: "Please link to the page or pages you'd like to see improved."
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Tell us more about this update.
+      label: Tell us more about this update
       description: |
         - Give as much detail as you can to help us understand the change you want to see. 
-        - What use cases does it support? 
+        - What use cases does it support? Can you provide or link to an example?
         - Why is this change important?
     validations:
       required: true
@@ -44,6 +44,6 @@ body:
   - type: textarea
     attributes:
       label: Additional information
-      description: Any additional information, configuration, or data that might be necessary to reproduce the issue.
+      description: Provide any additional information, configuration, or data that might be necessary to reproduce the issue.
     validations:
       required: false
