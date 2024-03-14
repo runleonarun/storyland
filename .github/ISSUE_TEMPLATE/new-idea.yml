@@ -31,8 +31,8 @@ body:
       - Give as much detail as you can to help us understand your idea. 
       - Why do you think this content is important?  
       - Who will this new content help?
-   validations:
-     required: true
+  validations:
+    required: true
 
 - type: textarea
   id: location
